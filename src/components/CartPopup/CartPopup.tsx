@@ -123,7 +123,7 @@ export function CartPopup({ opened, onClose, cart }: CartPopupProps) {
 
           <Group justify="space-between" mt="md">
             <Text fw={700}>Total</Text>
-            {/* стабильный селектор для тестов */}
+
             <Text fw={700} data-testid="cart-total">
               ${cart.total.toFixed(2)}
             </Text>

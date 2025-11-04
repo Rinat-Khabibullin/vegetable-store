@@ -25,7 +25,6 @@ describe('CartPopup', () => {
   test('отображает товары и итоговую сумму', () => {
     renderWithProviders(<CartPopup opened={true} onClose={() => {}} cart={cartWithItem as any} />);
     expect(screen.getByText('Tomato')).toBeInTheDocument();
-    // проверяем конкретный узел, чтобы не ловить дубликаты
     expect(screen.getByTestId('cart-total')).toHaveTextContent(/\$?\s*160(\.00)?/);
   });
 

@@ -1,4 +1,4 @@
-// src/components/Header/Header.tsx
+
 import {
   Group,
   Title,
@@ -36,7 +36,7 @@ export function Header({ count, total, onCartClick }: HeaderProps) {
       }}
     >
       <Group justify="space-between" style={{ width: "100%" }}>
-        {/* Левая часть */}
+
         <Group
           align="center"
           style={{
@@ -80,7 +80,7 @@ export function Header({ count, total, onCartClick }: HeaderProps) {
           </Badge>
         </Group>
 
-        {/* Правая часть */}
+
         <Button
           onClick={onCartClick}
           radius="md"
